@@ -5,6 +5,23 @@ This project send a get request to <a>https://jsonplaceholder.typicode.com/posts
 Also, user can be able to the export all data in the database to the Excel File
 </p>
 
+
+## Rest-Template-Config
+To be able to generate custom Exception 
+```
+    @Bean
+    public RestTemplateRespondErrorHandler  errorHandler(){
+        return new RestTemplateRespondErrorHandler();
+    }
+
+    @Bean
+    public RestTemplate restTemplate(){
+        return new RestTemplateBuilder()
+                .errorHandler(errorHandler())
+                .build();
+    }
+```
+
 ## Excel File 
 To be able to generate excel file you have to add  these dependencies
 ```
