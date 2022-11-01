@@ -8,7 +8,7 @@ Also, user can be able to the export all data in the database to the Excel File
 
 ## Rest-Template-Config
 To be able to generate custom Exception 
-```
+```Java
     @Bean
     public RestTemplateRespondErrorHandler  errorHandler(){
         return new RestTemplateRespondErrorHandler();
@@ -24,7 +24,7 @@ To be able to generate custom Exception
 
 ## Excel File 
 To be able to generate excel file you have to add  these dependencies
-```
+```Java
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
